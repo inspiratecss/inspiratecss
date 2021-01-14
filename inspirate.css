@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+/* 
+Montserrat
+Light 300
+Regular 400
+Medium 500
+Semi-bold 600
+Bold 700
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --def: rgb(80, 2, 226);
+  --btncolor: rgb(24, 24, 24);
+  --btn: rgb(216, 214, 214);
+  --warning: rgb(241, 207, 11);
+  --error: rgb(235, 55, 55);
+  --verd: rgb(36, 204, 50);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-full {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Buttons */
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 16px;
+  background: var(--btn);
+  border-radius: 2px;
+  color: var(--btncolor);
+}
+
+.btn.primary {
+  background: var(--def);
+  color: #fff;
+}
+
+.btn.error {
+  background: var(--error);
+  color: #fff;
+}
+
+.btn.warning {
+  background: var(--warning);
+}
+
+.btn.verd {
+  background: var(--verd);
+}
+
+.btn.rounded {
+  border-radius: 25px;
+}
+
+/* Dropdown button */
+
+.dropdown-box,
+.dropdown-box-hover {
+  width: fit-content;
+  position: relative;
+}
+
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  border-left: 1px solid rgb(32, 32, 32);
+  border-right: 1px solid rgb(32, 32, 32);
+  border-bottom: 1px solid rgb(32, 32, 32);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  visibility: hidden;
+}
+
+.dropdown-menu a:hover {
+  background: rgb(233, 232, 232);
+  width: 100%;
+}
+
+.dropdown-menu a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(32, 32, 32);
+  padding: 5px 10px;
+}
+
+.dropdown-box button:focus + .dropdown-menu {
+  visibility: visible;
+}
+
+/* .dropdown-btn-hover:hover + .dropdown-menu {
+  visibility: visible;
+} */
+
+.dropdown-box-hover:hover > .dropdown-menu {
+  visibility: visible;
+}
+
+/* advanced css classes */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.w-100 {
+  width: 100% !important;
+}
