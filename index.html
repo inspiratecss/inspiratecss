@@ -1,200 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inspirate.css">
-    <title>InspirateCSS Library</title>
-</head>
-<body>
-
-    <div style="margin-top:3rem" class="container d-flex jc-between fw-wrap ai-center">
-        <h2>Buttons</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="inspirate.css">
+        <!--for icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>InspirateCSS Library</title>
+    </head>
+    <body>
+    
+        <div style="margin-top:3rem" class="container d-flex jc-between fw-wrap ai-center">
+            <h1 class=" cntr  top-on">Buttons</h1>
+            <br>
+            <br>
+            <br>
+            <button class="btn">Default</button>
+            <button class="btn dark">Dark</button>
+            <button class="btn primary">Primary</button>
+            <button class="btn error">Error</button>
+            <button class="btn warning">Warning</button>
+            <button class="btn bgwhite   wt-border">White</button>
+            <button class="btn verd">Verd</button>
+            <button class="btn dark hred">Hover</button>
+            <button class="btn primary rounded">Rounded</button>
+        </div>
         <br>
-        <button class="btn">Default</button>
-        <button class="btn dark">Dark</button>
-        <button class="btn primary">Primary</button>
-        <button class="btn error">Error</button>
-        <button class="btn warning">Warning</button>
-        <button class="btn verd">Verd</button>
-
-        <button class="btn primary rounded">Rounded</button>
-    </div>
-
-    <div style="margin-top:3rem" class="container">
-        <h2>Dropdown-Buttons</h2>
+    
         <br>
 
-        <div class="d-flex">
-            <div class="dropdown-box">
-                <button class="btn primary">Dropdown Click</button>
-                <div class="dropdown-menu">
-                    <a href="#">Action</a>
-                    <a href="#">Action</a>
-                    <a href="#">Action</a>
+        <div class="container">
+            <h1 class="top-on  rght-fr">Button Group</h1>
+            <br>
+            <br>
+            <br>
+            <div class="btn-group">
+                <button class="btn primary ">Home</button>
+                <button class="btn primary ">Somewhere</button>
+                <button class="btn primary ">Far</button>
+    
+
+            </div>
+        </div>
+
+        <div style="margin-top:3rem" class="container">
+            <h2>Dropdown-Buttons</h2>
+            <br>
+            <div class="d-flex">
+                <div class="dropdown-box">
+                    <button class="btn primary">Dropdown Click</button>
+                    <div class="dropdown-menu">
+                        <a href="https://facebook.com">Action</a>
+                        <a href="#">Action</a>
+                        <a href="#">Action</a>
+                    </div>
                 </div>
+                <br>
+                <div style="margin-left: 20px;" class="dropdown-box-hover">
+                    <button class="btn error">Dropdown Hover</button>
+                    <div class="dropdown-menu">
+                        <a href="#">Action</a>
+                        <a href="#">Action</a>
+                        <a href="#">Action</a>
+                    </div>
+                </div>
+                <br>
+
+                <br>
+    
+                <br>
+  
+            </div>
+            <div style="margin-top:3rem;" class="container">
+                <h2>NavBars</h2>
+                <br>
+                <br>
+                <nav class="navbar light">
+                    <div class="container-full">
+                        <div class="navbar-content">
+                            <div class="nav-logo">
+                                Inspirate
+                            </div>
+                            <button class="menu-toggle">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </button>
+                            
+        
+                                <ul class="nav-links">
+                                    <li class="active">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                           </div>
+                    </div>
+                </nav>
+                <br><br>
+                <nav class="navbar dark">
+                    <div class="container-full">
+                        <div class="navbar-content">
+                            <div class="nav-logo">
+                                Inspirate
+                            </div>
+                            <button class="menu-toggle">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </button>
+    
+                                <ul class="nav-links">
+                                    <li class="active">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+    
+                        </div>
+                    </div>
+                </nav>
+                <br>
+                <!-- <nav class="navbar light searchnav">
+                    
+                    <div class="nav-links">
+                        <a class="active" href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                    </div>
+
+                    <div class="search-container">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </nav> -->
+               
+                <!-- <nav class="navbar light searchnav jc-between">
+                    
+                    <div class="nav-links">
+                        <a class="active" href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                    </div>
+
+                    <div class="search-container">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </nav> -->
+
+                <br>
+
+                <nav class="navbar light">
+                    <div class="container-full">
+                        <div class="navbar-content">
+                            <div class="nav-logo">
+                                Inspirate
+                            </div>
+                            <button class="menu-toggle">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </button>
+                            
+
+                                <ul class="nav-links ml-auto">
+                                    <li class="active">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+
+                        </div>
+                    </div>
+                </nav>
+                <br><br>
+
+                <!-- <nav class="navbar dark searchnav">
+                        <div class="navbar-content">
+                            <div class="nav-logo">
+                                Inspirate
+                            </div>
+        
+                            <button class="menu-toggle">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </button>
+
+      
+                                <ul class="nav-links">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                </ul>
+    
+                                
+                                <div class="searchbox ml-auto">
+                                    <input placeholder="Search" type="text">
+                                    <button class="btn primary">Search</button>
+                                </div>
+                           
+                        </div>
+
+                </nav> -->
+                <br><br>
+
+     
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>File Upload </h1>
+            <br>
+            <br>
+
+            <div class="uploadfile">
+                <input class="upload-file" type="file" id="u-file" class="btn dark">
+                <label class="btn dark" for="u-file">Choose File</label>   
+            </div>
+            <br>
+            <div class="uploadfile">
+                <input class="upload-file" type="file" id="u-file" class="btn dark">
+                <label class="btn light" for="u-file">Choose File</label>   
             </div>
 
             <br>
-
-            <div style="margin-left: 20px;" class="dropdown-box-hover">
-                <button class="btn error">Dropdown Hover</button>
-                <div class="dropdown-menu">
-                    <a href="#">Action</a>
-                    <a href="#">Action</a>
-                    <a href="#">Action</a>
+            <br>
+            <h1>Text area</h1>
+            <br>
+            <form>
+                <textarea placeholder="Text area" class="bigtextarea fon nor"></textarea>
+            </form>
+            <br>
+            <br>
+            <div class="container">
+                <div>
+                    <h2>Accordions</h2>
+                    <br>
+                    <br>
+                    <div class="accordion-box">
+                        <button class="accordion-toggle">Accordion</button>
+                        <div class="accordion-panel">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque, amet quibusdam ut placeat rerum. Possimus repudiandae autem dolore amet.
+                  <button class="btn primary">Lorem</button>
+                        </div>
+                    </div>
+                    <div class="accordion-box">
+                        <button class="accordion-toggle">Accordion</button>
+                        <div class="accordion-panel">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque, amet quibusdam ut placeat rerum. Possimus repudiandae autem dolore amet.
+                        <button class="btn error">Lorem</button>
+                        </div>
+                    </div>
+                    <div class="accordion-box">
+                        <button class="accordion-toggle">Accordion</button>
+                        <div class="accordion-panel">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque, amet quibusdam ut placeat rerum. Possimus repudiandae autem dolore amet.
+                  <button class="btn dark">Lorem</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
-
-    <div style="margin-top:3rem;" class="container">
-
-        <h2>NavBars</h2>
-        <br><br><br>
-
-        <nav class="navbar light">
-
-            <div class="nav-logo">
-                <h2>Inspirate</h2>
-            </div>
-
-            <button class="menu-toggle">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </button>
-
-            <ul class="nav-links">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <br>
-
-        <nav class="navbar dark">
-            <div class="nav-logo">
-                <h2>Inspirate</h2>
-            </div>
-
-                <button class="menu-toggle">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </button>
-    
-            <ul class="nav-links">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>      
-        </nav>
-
-        <br>
-
-        <nav class="navbar light jc-between">
-            <div class="nav-logo">
-                <h2>Inspirate</h2>
-            </div>
-
-
-            <button class="menu-toggle">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </button>
-
-            <div class="nav-links">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </div>
-        </nav>
-
-    
-
-    </div>
-
-    <br><br><br><br>
-
-    <div class="container">
-        <div>
-            <h2>Accordions</h2>
-            <br><br>
-            <div class="accordion-box">
-                <button class="accordion-toggle">Accordion</button>
-                <div class="accordion-panel">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque, amet quibusdam ut placeat rerum. Possimus repudiandae autem dolore amet.
-                    <button  class="btn primary">Lorem</button>
-                </div>
-            </div>
-
-            <div class="accordion-box">
-                <button class="accordion-toggle">Accordion</button>
-                <div class="accordion-panel">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque, amet quibusdam ut placeat rerum. Possimus repudiandae autem dolore amet.
-                    <button class="btn error">Lorem</button>
-                </div>
-            </div>
-
-            <div class="accordion-box">
-                <button class="accordion-toggle">Accordion</button>
-                <div class="accordion-panel">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur itaque, amet quibusdam ut placeat rerum. Possimus repudiandae autem dolore amet.
+            <br>
+            <br>
+            <h1 class="cntr">Centered Image</h1>
+            <br>
+            <img src="https://scontent.ftbs3-2.fna.fbcdn.net/v/t1.0-0/p526x296/68467650_1634335966698855_8706552944180330496_n.jpg?_nc_cat=107&ccb=2&_nc_sid=8bfeb9&_nc_ohc=fzTym1QRGEsAX--5Aib&_nc_ht=scontent.ftbs3-2.fna&tp=6&oh=1bf3347d0d3384f0c7f0b3ce7842c47e&oe=6026F06C" class="center">
+            <br>
+            <br>
+            <div class="container">
+                <h1 class="cntr">Cards</h1>
+                <br>
+                <br>
+                <div class="d-flex ai-start jc-between">
+                    <div class="card">
+                        <div class="card-img-div">
+                            <h3>Card</h3>
+                        </div>
+                        <div class="card-text">
+                            <h2>Lorem</h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ducimus voluptatem? Totam, perferendis quia animi quaerat perspiciatis hic sit eaque.
                     <button class="btn dark">Lorem</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-div">
+                            <h3>Card</h3>
+                        </div>
+                        <div class="card-text">
+                            <h2>Lorem</h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ducimus voluptatem? Totam, perferendis quia animi quaerat perspiciatis hic sit eaque.
+               
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h2>Lorem</h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ducimus voluptatem? Totam, perferendis quia animi quaerat perspiciatis hic sit eaque.
+                   <button class="btn dark">Lorem</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <br>
+                <br>
+                <br>
 
-        </div>
-    </div>
-
-    <br><br>
-    <br><br>
-    <div class="container">
-        <h2>Cards</h2><br><br>
-
-        <div class="d-flex ai-start jc-between">
-
-            <div class="card">
-                <div class="card-img-div"><h3>Image</h3></div>
-                <div class="card-text">
-                    <h2>Lorem</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ducimus voluptatem? Totam, perferendis quia animi quaerat perspiciatis hic sit eaque.
-                    <button class="btn dark">Lorem</button>
+                <div class="card">
+                    <div class="card-img">
+                        <img class="card-img" src="https://cdn2.vectorstock.com/i/1000x1000/20/76/man-avatar-profile-vector-21372076.jpg" alt="">
+                    </div>
+                    <div class="card-text t-center">
+                        <h2>John Doe</h2>
+                        Designer <br> 
+                        Web-Programmer <br>
+                        <button class="btn dark">Lorem</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-text">
-                    <h2>Lorem</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ducimus voluptatem? Totam, perferendis quia animi quaerat perspiciatis hic sit eaque.
-                    <button class="btn dark">Lorem</button>
+                <div style="margin-top:3rem" class="container">
+                    <h2>Modals</h2>
+                    <br><br>
+
+                    
+
+     
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-img-div"><h3>Image</h3></div>
-                <div class="card-text">
-                    <h2>Lorem</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ducimus voluptatem? Totam, perferendis quia animi quaerat perspiciatis hic sit eaque.
+                <div class="modal-box">
+                    <button class="btn primary open-modal">Click to open modal</button>
+                        <div class="modal">
+                            <button class="close-modal btn dark">x</button>
+                            <div class="modal-popup">
+                                <div class="modal-content">
+                                    <h1 class="this-is-modal">This is modal!</h1>
+                                    <button class="btn primary">Lorem</button>
+                                </div>
+                            </div>
+                    </div>  
                 </div>
-            </div>
 
-        </div>
-    </div>
-    
+
+                <!-- <div class="cardwimg rght img-right">
+                    <img src="https://cdn2.vectorstock.com/i/1000x1000/20/76/man-avatar-profile-vector-21372076.jpg" alt="Image" class="cardmm fll ">
+                    <div class="cntr">
+                        <h1>
+                            <b>John Doe</b>
+                        </h1>
+                        <br>
+                        <p>Web-Programmer</p>
+                        <br>
+                        <p>Designer</p>
+                        <br>
+                        <button class="btn center dark">Contact</button>
+                        <br>
+                    </div>
+                </div> -->
+                <br>
+                <br>
+                <!-- <div class="cardwimg center   an-top-fv-fv">
+                    <img src="https://lh3.googleusercontent.com/proxy/dpMr7L71BbywRZIfIxNJOszhpFKHE_hx98w9YMVfZC-rJAIhoHUkSV4-mV-XLJgBZ0nhKDpQ-dQCVohbbVkIHEtd54D2JbL0Hzyq6JehxpRY-opH_PxcLDNDowpJg9E" alt="Image" class="cardmm fll ">
+                    <div class="cntr">
+                        <h1>
+                            <b>Fruit  Juice</b>
+                        </h1>
+                        <br>
+                        <h3>Price - 1$
+</h><br>
+<br>
+<button class="btn primary center fa fa-shopping-cart"> Add to cart</button>
+<br>
+<br>
+</div></div></div>  -->
+
+
+<script src="inspirate.js"></script>
 </body>
+
 </html>
